@@ -1,0 +1,110 @@
+.projects {
+  background-color: #fff;
+  padding: 4rem 2rem; // Reduced for mobile.
+  height: auto; // Auto height on mobile for content fit.
+  align-items: center;
+
+  @include respond(tablet) {
+    flex-direction: row; // Original direction on tablet and above.
+    align-items: center;
+    padding-top: 6rem;
+  }
+
+  .project {
+    @include center-flex;
+    flex-direction: column; // Stack on mobile.
+    margin-bottom: 3rem;
+
+    @include respond(tablet) {
+      flex-direction: row; // Side-by-side for tablets and above.
+      gap: 3rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__img-box {
+      width: 65%; // Give some width on mobile.
+      margin-top: 2rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include respond(tablet) {
+        width: 100%;
+        flex: 1;
+      }
+
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    &__details {
+      text-align: center; // Centered for mobile.
+      @include paragraph-style;
+      @include respond(tablet) {
+        flex: 2;
+        text-align: left; // Left-aligned for tablets and above.
+      }
+
+      &__title {
+        font-size: 1.8rem; // Slightly reduced for mobile.
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #667eea;
+
+        @include respond(tablet) {
+          font-size: 2rem; // Original size for tablets and above.
+        }
+      }
+
+      &__description {
+        margin-bottom: 1rem; // Reduced for mobile.
+        @include paragraph-style;
+
+        @include respond(tablet) {
+          margin-bottom: 2rem; // Original for tablets and above.
+        }
+      }
+    }
+    &__links {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      justify-content: center; // Centered buttons for mobile.
+    }
+  }
+}
+.project__heading {
+  @include center-flex;
+  align-items: center;
+  gap: 3.5rem;
+
+  margin-top: 4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+
+  color: $color-powder-blue;
+}
+.project__title {
+  flex: 2;
+  text-align: left;
+  text-transform: uppercase;
+}
+.empty {
+  width: 100%;
+  flex: 1;
+}

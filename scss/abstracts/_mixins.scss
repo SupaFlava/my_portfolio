@@ -1,0 +1,32 @@
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint ==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@mixin heading-font($size) {
+  font-size: $size;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+
+  @include respond(tablet) {
+    margin-bottom: 4rem;
+  }
+}
+
+@mixin paragraph-style() {
+  color: #444;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}

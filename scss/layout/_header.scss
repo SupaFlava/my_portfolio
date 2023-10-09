@@ -1,0 +1,57 @@
+.header {
+  @include center-flex;
+  flex-direction: column;
+
+  height: 95vh;
+  padding: 4rem;
+  position: relative;
+
+  background-image: linear-gradient(to right bottom, #667eea, #764ba2);
+  background-size: cover;
+  background-position: top;
+  padding: 0rem;
+
+  @include respond(tablet) {
+    padding: 0rem;
+  }
+
+  &__logo-box {
+    margin-top: 2rem;
+    margin-bottom: auto;
+    align-self: flex-start;
+
+    @include respond(tablet) {
+      align-self: flex-start;
+    }
+  }
+  &__logo {
+    height: 10rem;
+    @include respond(tablet) {
+      height: 10rem;
+    }
+    transition: transform 3s ease-in-out;
+    &:hover {
+      animation: scratchRotate 1.5s forwards;
+    }
+  }
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+}

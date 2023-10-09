@@ -1,0 +1,14 @@
+{
+  "name": "my_latest_porfolio",
+  "version": "1.0.0",
+  "description": "my_portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/styles.css -w"
+  },
+  "author": "rami mhazres",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

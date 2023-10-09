@@ -1,0 +1,72 @@
+.about-me {
+  @include center-flex;
+  flex-direction: column; // Stack items on mobile.
+  padding: 4rem 2rem; // Reduced side padding for mobile.
+  background-color: #f9f9f9;
+  height: auto; // Auto height on mobile for content fit.
+
+  @include respond(tablet) {
+    flex-direction: row; // Original direction on tablet and above.
+    align-items: center;
+    padding-top: 6rem;
+  }
+
+  &__img-box {
+    width: 65%; // Give some width on mobile.
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; // Spacing between image and text on mobile.
+
+    @include respond(tablet) {
+      align-items: flex-start;
+
+      width: 100%;
+      flex: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 100%; // Full width on mobile.
+    border-radius: 50%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in;
+
+    @include respond(tablet) {
+      width: 75%; // Half width on tablet and above.
+    }
+  }
+
+  &__text {
+    text-align: center; // Centered text on mobile.
+    padding: 0 2rem; // Some side padding on mobile for better readability.
+
+    @include respond(tablet) {
+      flex: 2;
+      text-align: left; // Left-align on tablet and above.
+      padding-left: 4rem;
+    }
+  }
+  &__description {
+    @include paragraph-style;
+    &-link {
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+  &__below-container {
+    margin-top: 2rem;
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__below-logo {
+    width: 50px;
+    align-self: center;
+  }
+}
