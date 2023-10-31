@@ -1,6 +1,5 @@
 @mixin center-flex {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -12,21 +11,14 @@
   }
 }
 
-@mixin heading-font($size) {
-  font-size: $size;
-  font-weight: 600;
-  color: #667eea;
-  margin-bottom: 2rem;
+@mixin heading-font() {
+  font-weight: 700;
+  color: $color-primary-light;
   text-transform: uppercase;
-
-  @include respond(tablet) {
-    margin-bottom: 4rem;
-  }
 }
 
 @mixin paragraph-style() {
   color: #444;
-  font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 2;
   margin-bottom: 4rem;
 }

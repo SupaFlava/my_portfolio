@@ -1,23 +1,24 @@
 .projects {
-  background-color: #fff;
+  display: flex;
+  background-color: $color-white;
+  flex-direction: column; // Stack items on mobile.
   padding: 4rem 2rem; // Reduced for mobile.
   height: auto; // Auto height on mobile for content fit.
   align-items: center;
 
   @include respond(tablet) {
-    flex-direction: row; // Original direction on tablet and above.
     align-items: center;
-    padding-top: 6rem;
+    justify-content: space-between;
+    gap: 6rem;
   }
 
   .project {
     @include center-flex;
     flex-direction: column; // Stack on mobile.
-    margin-bottom: 3rem;
+    gap: 3rem;
 
     @include respond(tablet) {
       flex-direction: row; // Side-by-side for tablets and above.
-      gap: 3rem;
     }
 
     &:last-child {
@@ -26,23 +27,27 @@
 
     &__img-box {
       width: 65%; // Give some width on mobile.
-      margin-top: 2rem;
 
       display: flex;
       justify-content: center;
       align-items: center;
 
-      @include respond(tablet) {
-        width: 100%;
-        flex: 1;
-      }
-
       overflow: hidden;
       border-radius: 10px;
       box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+      @include respond(tablet) {
+        width: 100%;
+        max-width: 50%;
+        flex: 1;
+      }
 
       img {
+        display: block;
         width: 100%;
+        height: 100%;
+        aspect-ratio: 1/ 1;
+        object-fit: cover;
+        max-width: 60rem;
         transition: transform 0.3s ease;
         border-radius: 10px;
 
@@ -53,8 +58,13 @@
     }
 
     &__details {
+      display: flex;
+      flex-direction: column;
       text-align: center; // Centered for mobile.
-      @include paragraph-style;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
       @include respond(tablet) {
         flex: 2;
         text-align: left; // Left-aligned for tablets and above.
@@ -62,9 +72,9 @@
 
       &__title {
         font-size: 1.8rem; // Slightly reduced for mobile.
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 1rem;
-        color: #667eea;
+        color: $color-primary-light;
 
         @include respond(tablet) {
           font-size: 2rem; // Original size for tablets and above.
@@ -78,13 +88,25 @@
         @include respond(tablet) {
           margin-bottom: 2rem; // Original for tablets and above.
         }
+        &__technologies {
+          font-family: $heading-font;
+          font-weight: 700;
+          color: $color-text-dark;
+        }
       }
     }
     &__links {
       display: flex;
       gap: 2rem;
-      margin-top: 2rem;
-      justify-content: center; // Centered buttons for mobile.
+
+      justify-content: center;
+      @include respond(tablet) {
+        justify-content: start;
+      }
+      a {
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+      }
     }
   }
 }
@@ -94,17 +116,11 @@
   gap: 3.5rem;
 
   margin-top: 4rem;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-
-  color: $color-powder-blue;
+  font-family: $heading-font;
+  font-weight: 700;
 }
 .project__title {
   flex: 2;
   text-align: left;
   text-transform: uppercase;
-}
-.empty {
-  width: 100%;
-  flex: 1;
 }

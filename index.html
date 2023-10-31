@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      as="style"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <title>Your Name - Frontend Developer</title>
+
+    <title>Rami Mhazres - Frontend Developer</title>
+    <!--Open Graph-->
+    <meta proporty="og:title" content="Rami Mhazres - Frontend Developer" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
+    />
+    <meta property="og:site_name" content="Rami Mhazres's Portfolio" />
   </head>
   <body>
     <div class="navigation">
@@ -36,197 +56,272 @@
     <header class="header">
       <div class="header__logo-box">
         <img class="header__logo" src="./img/supaflava logo.svg" alt="Logo" />
-        <div class="gradient-overlay"></div>
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Rami Mhazres</span>
           <span class="heading-primary--sub">Front end Developer</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">get to know me</a>
+        <a href="#about-me" class="btn btn--white btn--animated"
+          >get to know me</a
+        >
       </div>
     </header>
 
     <section class="about-me" id="about-me">
       <div class="about-me__img-box">
-        <img
-          src="./img/me.jpg"
-          alt="Rami Mhazres Portrait"
-          class="about-me__img"
-        />
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcset="./img/me1.webp"
+            type="image/webp"
+          />
+          <source
+            media="(min-width:480px)"
+            srcset="./img/me-medium.webp"
+            type="image/webp"
+          />
+          <img
+            src="./img/me-small.webp"
+            alt="Project 1 Image"
+            sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+            class="about-me__img"
+          />
+        </picture>
       </div>
       <div class="about-me__text">
-        <div>
+        <div class="about-me__story">
           <h2 class="heading-secondary">My Story</h2>
           <p class="about-me__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            est molestias cumque tenetur suscipit sed dicta quibusdam quidem
-            harum facilis dolor delectus tempora repellendus quasi minima,
-            aliquam nisi? Numquam, fugiat! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Praesentium ab nostrum, reprehenderit
-            doloribus eum, aliquid earum culpa corporis quasi excepturi, officia
-            sequi corrupti provident consequuntur unde maiores nesciunt sint
-            facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Rerum, culpa ea inventore fugit sit magnam porro quidem vero fuga
-            vitae soluta. Laboriosam obcaecati, possimus amet quasi enim
-            accusamus temporibus rem.
+            I've been a DJ for over 10 years. But when the pandemic hit and
+            nightlife shut down, I had a lot of free time. I've always been into
+            computers, and that's when I stumbled upon coding. It felt like
+            solving puzzles, which I loved.<br />
+            <br />
+            I started teaching myself and after two months, I joined a six-month
+            bootcamp where I learned about the MERN stack. When the bootcamp
+            ended, and things started to open up again, I went back to DJing. I
+            wasn't ready to switch careers just yet. Partly because I felt like
+            I still had a lot to learn and also because I enjoyed following
+            tutorials and learning at my own pace.<br />
+            <br />
+
+            Later on, I got a chance to join another bootcamp, this time
+            sponsored by GIZ. It was different; it was more about the basics of
+            computer science. But even after finishing that, I wasn't in a rush
+            to get a job as a web developer. I liked coding as a hobby.<br />
+            <br />
+
+            But now, in 2023, things have changed. I moved to the Netherlands,
+            and I feel it's time to switch things up. I want to work as a web
+            developer and keep my DJing as a side passion. I genuinely believe
+            that coding is what I want to do now.
           </p>
         </div>
-        <div>
+        <div class="about-me__goals">
           <h2 class="heading-secondary">What i'm looking for</h2>
           <p class="about-me__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            est molestias cumque tenetur suscipit sed dicta quibusdam quidem
-            harum facilis dolor delectus tempora repellendus quasi minima,
-            aliquam nisi? Numquam, fugiat! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Praesentium ab nostrum, reprehenderit
-            doloribus eum, aliquid earum culpa corporis quasi excepturi, officia
-            sequi corrupti provident consequuntur unde maiores nesciunt sint
-            facilis. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Rerum, culpa ea inventore fugit sit magnam porro quidem vero fuga
-            vitae soluta. Laboriosam obcaecati, possimus amet quasi enim
-            accusamus temporibus rem.
+            I want to be somewhere I can grow big time. A place with good vibes
+            and a team that does things the right way. It'd be cool to have some
+            seasoned pros around, so I can pick up new tricks and keep leveling
+            up. And while I'm flexible, I'm really into working face-to-face.
+            There's just something about being on-site and in the mix with
+            everyone.
           </p>
         </div>
       </div>
     </section>
 
     <section class="projects" id="projects">
-      <!-- Project 1 -->
+      <!-- Mood  -->
       <div class="project">
         <div class="project__img-box">
-          <img
-            src="./img/rsz_tiny_journal.png"
-            alt="Project 1 Image"
-            class="project__img"
-          />
+          <picture>
+            <source
+              media="(min-width:800px)"
+              srcset="./img/mood-big.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width:480px)"
+              srcset="./img/mood-medium.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/mood-small.webp"
+              alt="Project 1 Image"
+              class="project__img"
+              width="360"
+              height="400"
+              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+              loading="lazy"
+            />
+          </picture>
         </div>
 
         <div class="project__details">
-          <h3 class="heading-secondary">Project : planetarium</h3>
-          <h4 class="project__details_title details_title">Description</h4>
+          <h2 class="heading-secondary">AI-Driven Journaling Platform</h2>
+          <h3 class="project__details_title details_title">Description</h3>
 
           <p class="project__details__description">
-            An elegant landing page designed for a luxury brand. Built with
-            modern frontend technologies to ensure performance and
-            responsiveness. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Ut magni quo officiis corrupti? Nisi eius voluptatem adipisci
-            eaque. Nostrum odio ipsa velit adipisci officiis fugit rem quos
-            cupiditate voluptatum itaque.
+            I dove into this project during the "AI-Powered Fullstack Next.js
+            App" course from Frontend Mentor. Imagine jotting down your daily
+            thoughts, and then, boom, AI jumps in, slaps on a fitting title,
+            colors it based on your mood, and even tells you if it's a happy
+            note or not. Curious if you've been on cloud nine or a bit down
+            lately? Just ask it, "Hey, was I feeling good the past 10 days?" and
+            it'll comb through your entries, giving you a quick mood recap.
+            Plus, you get to see mood swing charts.
           </p>
-          <h4 class="project__details_title details_title">take away</h4>
 
-          <p class="project__details__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ad
-            officia mollitia ipsam sed accusamus alias corrupti molestiae earum
-            consectetur dignissimos laborum, quo id sapiente ipsa harum fuga
-          </p>
-          <h4 class="project__details_title details_title">
+          <h3 class="project__details_title details_title">
             technologies used
-          </h4>
-          <p class="project__details__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-            delectus minima, quis optio, dolore neque cupiditate numquam aliquid
-            nobis repellat necessitatibus ratione amet fuga soluta autem quae!
-            Vitae, ullam. Id!
+          </h3>
+          <p class="project__details__description__technologies">
+            Next.js - Prisma - PlanetScale - OpenAI API - Langchain - Tailwind.
           </p>
 
           <div class="project__links">
-            <a href="#" class="btn btn--white">see Live</a>
-            <a href="#" class="btn btn--blue"> see Code</a>
+            <a
+              target="_blank"
+              href="https://nextjs-ai-feels.vercel.app"
+              class="btn btn--blue"
+              >see Live</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/SupaFlava/nextjs-ai"
+              class="btn btn--white"
+            >
+              see Code</a
+            >
           </div>
         </div>
       </div>
 
-      <!--PROJECT 2 -->
+      <!--Planatarium -->
       <div class="project">
         <div class="project__img-box">
-          <img
-            src="./img/planetarium-tiny.png"
-            alt="Project 1 Image"
-            class="project__img"
-          />
+          <picture>
+            <source
+              media="(min-width:800px)"
+              srcset="./img/planetarium.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width:480px)"
+              srcset="./img/planetarium-medium.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/planetarium-small.webp"
+              alt="Project 1 Image"
+              class="project__img"
+              width="360"
+              height="400"
+              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+              loading="lazy"
+            />
+          </picture>
         </div>
 
         <div class="project__details">
-          <span class="project__span"
-            >Project :
-            <h3 class="heading-secondary">Mood</h3></span
-          >
-          <h4 class="project__details_title details_title">Description</h4>
+          <h2 class="heading-secondary">planetarium</h2>
+
+          <h3 class="project__details_title details_title">Description</h3>
 
           <p class="project__details__description">
-            An elegant landing page designed for a luxury brand. Built with
-            modern frontend technologies to ensure performance and
-            responsiveness. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Ut magni quo officiis corrupti? Nisi eius voluptatem adipisci
-            eaque. Nostrum odio ipsa velit adipisci officiis fugit rem quos
-            cupiditate voluptatum itaque.
+            After taking a break from coding, I decided to dive back in with the
+            "Planetarium Explorer" project. It's a straightforward web app that
+            lets you explore the solar system. I used a template from Frontend
+            Masters as my base. This project was especially refreshing because I
+            got to brush up on my frontend skills and learn about styled
+            components and TypeScript along the way.
           </p>
-          <h4 class="project__details_title details_title">take away</h4>
 
-          <p class="project__details__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ad
-            officia mollitia ipsam sed accusamus alias corrupti molestiae earum
-            consectetur dignissimos laborum, quo id sapiente ipsa harum fuga
-          </p>
-          <h4 class="project__details_title details_title">
+          <h3 class="project__details_title details_title">
             technologies used
-          </h4>
-          <p class="project__details__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-            delectus minima, quis optio, dolore neque cupiditate numquam aliquid
-            nobis repellat necessitatibus ratione amet fuga soluta autem quae!
-            Vitae, ullam. Id!
+          </h3>
+          <p class="project__details__description__technologies">
+            Next.js - Styled Components - TypeScript - Contentful CMS.
           </p>
 
           <div class="project__links">
-            <a href="#" class="btn btn--white">see Live</a>
-            <a href="#" class="btn btn--blue"> see Code</a>
+            <a
+              target="_blank"
+              href="https://planetarium-nine.vercel.app"
+              class="btn btn--blue"
+              >see Live</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/SupaFlava/planetarium"
+              class="btn btn--white"
+            >
+              see Code</a
+            >
           </div>
         </div>
       </div>
-      <!-- Add other projects similarly... -->
+      <!--Oryx-->
       <div class="project">
         <div class="project__img-box">
-          <img
-            src="./img/rsz_11tiny.png"
-            alt="Project 1 Image"
-            class="project__img"
-          />
+          <picture>
+            <source
+              media="(min-width:800px)"
+              srcset="./img/oryx-big.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width:480px)"
+              srcset="./img/oryx-medium.webp"
+              type="image/webp"
+            />
+            <img
+              src="./img/oryx-small.webp"
+              alt="Project 1 Image"
+              class="project__img"
+              width="360"
+              height="400"
+              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div class="project__details">
-          <h3 class="heading-secondary">Project : Oryx</h3>
-          <h4 class="project__details_title details_title">Description</h4>
+          <h2 class="heading-secondary">Oryx</h2>
+          <h3 class="project__details_title details_title">Description</h3>
 
           <p class="project__details__description">
-            An elegant landing page designed for a luxury brand. Built with
-            modern frontend technologies to ensure performance and
-            responsiveness. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Ut magni quo officiis corrupti? Nisi eius voluptatem adipisci
-            eaque. Nostrum odio ipsa velit adipisci officiis fugit rem quos
-            cupiditate voluptatum itaque.
+            For my final project at the GoMyCode bootcamp in 2021, I wanted to
+            create something that resonated with local culture and trends. So, I
+            developed an all-in-one e-commerce platform specifically for
+            Tunisian streetwear brands. This wasn't just a frontend ; I used all
+            technologies I'd learned throughout the course front to back.
           </p>
-          <h4 class="project__details_title details_title">take away</h4>
 
-          <p class="project__details__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, ad
-            officia mollitia ipsam sed accusamus alias corrupti molestiae earum
-            consectetur dignissimos laborum, quo id sapiente ipsa harum fuga
-          </p>
-          <h4 class="project__details_title details_title">
+          <h3 class="project__details_title details_title">
             technologies used
-          </h4>
-          <p class="project__details__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-            delectus minima, quis optio, dolore neque cupiditate numquam aliquid
-            nobis repellat necessitatibus ratione amet fuga soluta autem quae!
-            Vitae, ullam. Id!
+          </h3>
+
+          <p class="project__details__description__technologies">
+            React - Redux - Bootstrap - Node - MongoDb
           </p>
 
           <div class="project__links">
-            <a href="#" class="btn btn--white">see Live</a>
-            <a href="#" class="btn btn--blue"> see Code</a>
+            <a
+              target="_blank"
+              href="https://oryxapp.onrender.com/"
+              class="btn btn--blue"
+              >see Live</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/SupaFlava/OryxApp"
+              class="btn btn--white"
+            >
+              see Code</a
+            >
           </div>
         </div>
       </div>
@@ -239,24 +334,35 @@
             Feel free to reach out if you're looking for a developer, have a
             question, or just want to connect.
           </p>
-          <a href="mailto:rami@example.com" class="btn btn--white">Email Me</a>
+          <a href="mailto:mhazresrami@gmail.com" class="btn btn--white"
+            >Email Me</a
+          >
         </div>
 
         <div class="footer__social">
-          <a href="#" class="footer__social-icon"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="#" class="footer__social-icon"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#" class="footer__social-icon"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <!-- Add other social media as needed -->
+          <a
+            target="_blank"
+            href="https://github.com/SupaFlava"
+            class="footer__social-icon"
+            ><i class="fab fa-github"></i>Github</a
+          >
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/rami-mhazres/"
+            class="footer__social-icon"
+            ><i class="fab fa-linkedin"></i>LinkedIn</a
+          >
+
+          <a
+            target="_blank"
+            href="https://learn.gomycode.co/credentials/9ed1e177-e491-4f47-ab42-e474b30d7f47/GYAOARMHSYYSCALOCEDEEEONI-CN-TC-O/00001058"
+            class="footer__social-icon"
+            ><i class="fa-solid fa-certificate"></i>Credentials</a
+          >
         </div>
 
         <div class="footer__legal">
-          <p>&copy; 2023 by Rami Mhazres. All rights reserved.</p>
+          <p>&copy;Made in 2023 by Rami Mhazres.</p>
         </div>
       </div>
     </footer>

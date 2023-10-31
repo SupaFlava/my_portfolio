@@ -3,16 +3,19 @@
   flex-direction: column; // Stack items on mobile.
   padding: 4rem 2rem; // Reduced side padding for mobile.
   background-color: #f9f9f9;
-  height: auto; // Auto height on mobile for content fit.
 
   @include respond(tablet) {
     flex-direction: row; // Original direction on tablet and above.
     align-items: center;
-    padding-top: 6rem;
   }
-
+  &__story,
+  &__goals {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
   &__img-box {
-    width: 65%; // Give some width on mobile.
+    width: 65%;
     margin-top: 2rem;
 
     display: flex;
@@ -32,6 +35,9 @@
   &__img {
     width: 100%; // Full width on mobile.
     border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     animation: fadeIn 2s ease-in;
 
@@ -41,10 +47,15 @@
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+
     text-align: center; // Centered text on mobile.
     padding: 0 2rem; // Some side padding on mobile for better readability.
 
     @include respond(tablet) {
+      justify-content: space-between;
+
       flex: 2;
       text-align: left; // Left-align on tablet and above.
       padding-left: 4rem;
@@ -60,7 +71,6 @@
   }
   &__below-container {
     margin-top: 2rem;
-    // border: 1px solid red;
     display: flex;
     align-items: center;
     flex-direction: column;

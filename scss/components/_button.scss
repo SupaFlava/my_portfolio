@@ -1,13 +1,16 @@
 .btn {
   &:link,
   &:visited {
+    font-family: $heading-font;
+
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
-    padding: 1.5rem 4rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
+    padding: 1.5rem 4rem;
+
     position: relative;
   }
 
@@ -23,19 +26,20 @@
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
+
   &--white {
     background-color: #fff;
-    color: $color-mauve;
-    &::after {
-      background-color: #fff;
-    }
+
+    border: 2px solid #317a8e;
+    color: #317a8e;
   }
   &--blue {
-    background-color: #667eea;
-    color: #fff;
-
+    background-color: darken($color-primary-light, 5%);
+    border: 2px solid darken($color-primary-light, 5%);
+    padding: 1rem 2.4rem;
+    color: $color-white;
     &:hover {
-      background-color: darken(#667eea, 10%);
+      background-color: darken($color-primary-light, 15%);
     }
   }
 
@@ -55,6 +59,7 @@
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
+    border: none;
   }
   @include respond(tablet) {
     padding: 1rem 3rem;
