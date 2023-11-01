@@ -4,24 +4,32 @@
   }
   &__button {
     background-color: #fff;
-    height: 7.5rem;
-    width: 7.5rem;
+
+    height: 6rem;
+    width: 6rem;
+
     position: fixed;
     top: 6.5rem;
-    right: 6rem;
+    right: 2rem;
     border-radius: 50%;
     z-index: 20000;
     box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
     text-align: center;
     cursor: pointer;
+    @include respond(tablet) {
+      right: 4rem;
+      height: 7.5rem;
+      width: 7.5rem;
+    }
   }
   &__background {
-    height: 6rem;
-    width: 6.5rem;
+    height: 5rem;
+    width: 5.5rem;
+
     border-radius: 50%;
     position: fixed;
     top: 7rem;
-    right: 6.5rem;
+    right: 2.5rem;
 
     background-image: radial-gradient(
       $color-primary-light,
@@ -29,6 +37,11 @@
     );
     z-index: 1000;
     transition: transform 0.5s cubic-bezier(0.86, 0, 0.7, 1);
+    @include respond(tablet) {
+      right: 4.5rem;
+      height: 6rem;
+      width: 6.5rem;
+    }
   }
   &__nav {
     height: 100vh;
@@ -102,12 +115,12 @@
 
   &__icon {
     position: relative;
-    margin-top: 3.7rem;
+    margin-top: 3rem;
     &,
     &::before,
     &::after {
-      width: 3.5rem;
-      height: 2px;
+      width: 3rem;
+      height: 1.5px;
       background-color: #317a8e;
       display: inline-block;
     }
@@ -123,6 +136,11 @@
     }
     &::after {
       top: 0.8rem;
+    }
+    @include respond(tablet) {
+      margin-top: 3.7rem;
+      height: 2px;
+      width: 3rem;
     }
   }
   &__button:hover &__icon::before {

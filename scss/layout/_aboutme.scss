@@ -24,8 +24,6 @@
     margin-bottom: 2rem; // Spacing between image and text on mobile.
 
     @include respond(tablet) {
-      align-items: flex-start;
-
       width: 100%;
       flex: 1;
       margin-bottom: 0;
@@ -40,10 +38,6 @@
 
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     animation: fadeIn 2s ease-in;
-
-    @include respond(tablet) {
-      width: 75%; // Half width on tablet and above.
-    }
   }
 
   &__text {

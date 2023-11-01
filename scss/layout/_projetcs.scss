@@ -62,7 +62,7 @@
       flex-direction: column;
       text-align: center; // Centered for mobile.
       justify-content: space-between;
-      gap: 2rem;
+      gap: 3rem;
       margin-bottom: 2rem;
 
       @include respond(tablet) {
@@ -86,7 +86,7 @@
         @include paragraph-style;
 
         @include respond(tablet) {
-          margin-bottom: 2rem; // Original for tablets and above.
+          margin-bottom: 0rem; // Original for tablets and above.
         }
         &__technologies {
           font-family: $heading-font;

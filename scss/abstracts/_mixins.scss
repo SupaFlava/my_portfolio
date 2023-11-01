@@ -18,7 +18,6 @@
 }
 
 @mixin paragraph-style() {
-  color: #444;
-  line-height: 2;
-  margin-bottom: 4rem;
+  color: $color-text-paragraph;
+  line-height: 1.8;
 }

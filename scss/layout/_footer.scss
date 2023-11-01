@@ -1,7 +1,7 @@
 .footer {
   background: linear-gradient(145deg, $color-primary-light, #667eea);
   color: #fff;
-  padding: 2rem 1rem; // Reduced padding for mobile.
+  padding: 2rem; // Reduced padding for mobile.
   font-size: 1rem; // Slightly smaller font-size for mobile.
 
   @include respond(tablet) {
@@ -61,10 +61,10 @@
   .footer__social {
     display: flex;
 
-    gap: 4rem; // Reduced gap for mobile.
+    gap: 1.5rem; // Reduced gap for mobile.
 
     &-icon {
-      font-size: 1.8rem; // Slightly smaller font-size for mobile.
+      font-size: 1.5rem; // Slightly smaller font-size for mobile.
       transition: all 0.3s;
 
       text-decoration: none;
