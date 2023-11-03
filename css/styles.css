@@ -79,6 +79,9 @@ body {
     body {
       font-size: 2rem; } }
 
+body::-webkit-scrollbar {
+  display: none; }
+
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -198,9 +201,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  height: 95vh;
-  position: relative;
+  min-height: 95vh;
+  gap: 5rem;
   background-image: linear-gradient(to right bottom, #667eea, #764ba2);
   background-size: cover;
   background-position: top; }
@@ -210,36 +212,28 @@ body {
   .header__logo-box {
     margin-top: 2rem;
     margin-bottom: auto;
+    padding: 0;
     align-self: center; }
-    @media (min-width: 768px) {
-      .header__logo-box {
-        align-self: center; } }
   .header__logo {
-    height: 15rem;
+    height: 20rem;
     aspect-ratio: 1/1;
     object-fit: contain;
-    transition: transform 3s ease-in-out; }
+    display: block;
+    padding: 0;
+    transition: transform 2s ease-in-out; }
     @media (min-width: 768px) {
       .header__logo {
         height: 25rem; } }
     .header__logo:hover {
       animation: scratchRotate 1.5s forwards; }
   .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem; }
-    .header__text-box h1 {
-      margin: 2rem 0rem; }
-    .header__text-box .btn {
-      margin: 2rem 0; }
+    justify-content: start;
+    gap: 10rem; }
 
 .about-me {
   display: flex;

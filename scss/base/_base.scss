@@ -11,6 +11,7 @@ html {
 }
 body {
   box-sizing: border-box;
+
   @media (min-width: 350px) {
     padding: 0rem;
     font-size: 1.2rem;
@@ -28,4 +29,7 @@ body {
     font-size: 2rem;
   }
   scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
 }

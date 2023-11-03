@@ -1,10 +1,9 @@
 .header {
   @include center-flex;
   flex-direction: column;
-  justify-content: space-between;
 
-  height: 95vh;
-  position: relative;
+  min-height: 95vh;
+  gap: 5rem;
 
   background-image: linear-gradient(
     to right bottom,
@@ -21,18 +20,17 @@
   &__logo-box {
     margin-top: 2rem;
     margin-bottom: auto;
+    padding: 0;
     align-self: center;
-
-    @include respond(tablet) {
-      align-self: center;
-    }
   }
   &__logo {
-    height: 15rem;
+    height: 20rem;
     aspect-ratio: 1/1;
     object-fit: contain;
+    display: block;
+    padding: 0;
 
-    transition: transform 3s ease-in-out;
+    transition: transform 2s ease-in-out;
     @include respond(tablet) {
       height: 25rem;
     }
@@ -42,24 +40,13 @@
     }
   }
   &__text-box {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     text-align: center;
+
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    h1 {
-      margin: 2rem 0rem;
-    }
-    .btn {
-      margin: 2rem 0;
-    }
+    justify-content: start;
+    gap: 10rem;
   }
 }
