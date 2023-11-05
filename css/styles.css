@@ -281,7 +281,8 @@ body {
         padding-left: 4rem; } }
   .about-me__description {
     color: #444;
-    line-height: 1.8; }
+    line-height: 1.8;
+    margin-bottom: 2rem; }
     .about-me__description-link {
       padding: 0;
       margin: 0;
