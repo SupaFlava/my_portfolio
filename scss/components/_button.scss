@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .btn {
   &:link,
   &:visited {
@@ -34,13 +36,16 @@
     color: #317a8e;
   }
   &--blue {
-    background-color: darken($color-primary-light, 5%);
-    border: 2px solid darken($color-primary-light, 5%);
+    background-color: color.adjust($color-primary-light, $lightness: -5%, $space: hsl);
+    border: 2px solid color.adjust($color-primary-light, $lightness: -5%, $space: hsl);
     padding: 1rem 2.4rem;
     color: $color-white;
     &:hover {
-      background-color: darken($color-primary-light, 15%);
+      background-color: color.adjust($color-primary-light, $lightness: -15%, $space: hsl);
     }
+	@include respond(tablet) {
+		padding: 1rem 2.4rem; // keep blue's own padding at tablet+
+	}
   }
 
   &::after {

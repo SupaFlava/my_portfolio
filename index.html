@@ -36,13 +36,13 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
 
-    <title>Rami Mhazres - Frontend Developer</title>
+    <title>Rami Mhazres - Software Engineer</title>
     <!--Open Graph-->
-    <meta proporty="og:title" content="Rami Mhazres - Frontend Developer" />
+    <meta proporty="og:title" content="Rami Mhazres - Software Engineer" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
+      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing. change_me"
     />
     <meta property="og:site_name" content="Rami Mhazres's Portfolio" />
     <meta
@@ -64,7 +64,7 @@
             <a href="#about-me" class="navigation__link">About Me</a>
           </li>
           <li class="navigation__item">
-            <a href="#projects" class="navigation__link">projects</a>
+            <a href="#projects" class="navigation__link">Projects</a>
           </li>
           <li class="navigation__item">
             <a href="#contacts" class="navigation__link">Contacts</a>
@@ -83,7 +83,7 @@
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Rami Mhazres</span>
-          <span class="heading-primary--sub">Front end Developer</span>
+          <span class="heading-primary--sub">Software Engineer</span>
         </h1>
         <a href="#about-me" class="btn btn--white btn--animated"
           >get to know me</a
@@ -96,16 +96,16 @@
         <picture>
           <source
             media="(min-width:800px)"
-            srcset="./img/me1.webp"
+            srcset="./img/rmhazres800.webp"
             type="image/webp"
           />
           <source
             media="(min-width:480px)"
-            srcset="./img/me-medium.webp"
+            srcset="./img/rmhazres480.webp"
             type="image/webp"
           />
           <img
-            src="./img/me-small.webp"
+            src="./img/rmhazres320.webp"
             alt="A portrait of Rami Mhazres."
             sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
             class="about-me__img"
@@ -116,10 +116,7 @@
         <div class="about-me__story">
           <h2 class="heading-secondary">My Story</h2>
           <p class="about-me__description">
-            I've been a DJ for over 10 years. When the pandemic hit and
-            nightlife shut down, I all of a sudden had a lot of free time. I've
-            always been into computers, and that's when I stumbled upon coding.
-            It felt like solving puzzles, which I love.<br />
+            I've discoved coding in  2022 when Covid happends and suddenly the world stopped and  <br />
             <br />
             I started by teaching myself and after two months I joined a
             six-month bootcamp where I learned about the MERN stack. When the
@@ -156,32 +153,151 @@
     </section>
 
     <section class="projects" id="projects">
-      <!--Scratch Bank-->
+
+	<!--Webserv -->
+	<div class="project">
+		<div class="project__img-box">
+		<picture>
+			<source
+				media="(min-width:800px)"
+				srcset="./img/planetarium.webp"
+				type="image/webp"
+				/>
+				<source
+				media="(min-width:480px)"
+					srcset="./img/planetarium-medium.webp"
+					type="image/webp"
+				/>
+				<img
+					src="./img/planetarium-small.webp"
+					alt="Project 1 Image"
+					class="project__img"
+					width="400"
+					height="400"
+					sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+					loading="lazy"
+				/>
+				</picture>
+			</div>
+	
+			<div class="project__details">
+				<h2 class="heading-secondary">Webserv</h2>
+	
+				<h3 class="project__details_title details_title">Description</h3>
+	
+				<p class="project__details__description">
+					Webserv is a group project focused on building a basic HTTP server from scratch using C++. I built the request/response parser and validator, handled file uploads, and implemented CGI execution.
+				</p>
+	
+				<h3 class="project__details_title details_title">
+				technologies used
+				</h3>
+				<p class="project__details__description__technologies">
+				C++
+				</p>
+	
+				<div class="project__links">
+				<a
+					target="_blank"
+					href="https://planetarium-nine.vercel.app"
+					class="btn btn--blue"
+					>see Live</a
+				>
+				<a
+					target="_blank"
+					href="https://github.com/SupaFlava/planetarium"
+					class="btn btn--white"
+				>
+					see Code</a
+				>
+				</div>
+			</div>
+			</div>
+      <!--Cub3d -->
       <div class="project">
         <div class="project__img-box">
           <picture>
             <source
               media="(min-width:800px)"
-              srcset="./img/scratch-bank-last.webp"
+              srcset="./img/planetarium.webp"
               type="image/webp"
             />
             <source
               media="(min-width:480px)"
-              srcset="./img/scratch-bank-mid.webp"
+              srcset="./img/planetarium-medium.webp"
               type="image/webp"
             />
             <img
-              src="./img/scratch-bank-small.webp"
+              src="./img/planetarium-small.webp"
               alt="Project 1 Image"
               class="project__img"
-              width="360"
+              width="400"
               height="400"
               sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
               loading="lazy"
             />
           </picture>
         </div>
-        <!--Scratch bank-->
+
+        <div class="project__details">
+          <h2 class="heading-secondary">Cub3d</h2>
+
+          <h3 class="project__details_title details_title">Description</h3>
+
+          <p class="project__details__description">
+			Cub3D is a group project part of the curriculum at Codam/42, inspired by Wolfenstein 3D. I contributed to the configuration parsing and map parsing, and implemented a custom memory management system.
+
+          </p>
+
+          <h3 class="project__details_title details_title">
+            technologies used
+          </h3>
+          <p class="project__details__description__technologies">
+            C - MLX42
+          </p>
+
+          <div class="project__links">
+            <a
+              target="_blank"
+              href="https://planetarium-nine.vercel.app"
+              class="btn btn--blue"
+              >see Live</a
+            >
+            <a
+              target="_blank"
+              href="https://github.com/SupaFlava/planetarium"
+              class="btn btn--white"
+            >
+              see Code</a
+            >
+          </div>
+        </div>
+      </div>
+	<!--Scratch Bank-->
+	<div class="project">
+	<div class="project__img-box">
+		<picture>
+		<source
+			media="(min-width:800px)"
+			srcset="./img/scratch-bank-last.webp"
+			type="image/webp"
+		/>
+		<source
+			media="(min-width:480px)"
+			srcset="./img/scratch-bank-mid.webp"
+			type="image/webp"
+		/>
+		<img
+			src="./img/scratch-bank-small.webp"
+			alt="Project 1 Image"
+			class="project__img"
+			width="400"
+			height="400"
+			sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+			loading="lazy"
+		/>
+		</picture>
+	</div>
         <div class="project__details">
           <h2 class="heading-secondary">Music & Sound bank for scratch dj's</h2>
           <h3 class="project__details_title details_title">Description</h3>
@@ -216,72 +332,7 @@
           </div>
         </div>
       </div>
-      <!-- Mood  -->
-      <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/mood-big.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/mood-medium.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/mood-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="360"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-
-        <div class="project__details">
-          <h2 class="heading-secondary">AI-Driven Journaling Platform</h2>
-          <h3 class="project__details_title details_title">Description</h3>
-
-          <p class="project__details__description">
-            I dove into this project during the "AI-Powered Fullstack Next.js
-            App" course from Frontend Mentor. Imagine jotting down your daily
-            thoughts, and then, boom, AI jumps in, slaps on a fitting title,
-            colors it based on your mood, and even tells you if it's a happy
-            note or not. Curious if you've been on cloud nine or a bit down
-            lately? Just ask it, "Hey, was I feeling good the past 10 days?" and
-            it'll comb through your entries, giving you a quick mood recap.
-            Plus, you get to see mood swing charts.
-          </p>
-
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
-          <p class="project__details__description__technologies">
-            Next.js - Prisma - PlanetScale - OpenAI API - Langchain - Tailwind
-          </p>
-
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://nextjs-ai-feels.vercel.app"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/nextjs-ai"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
-
+ 
       <!--Planatarium -->
       <div class="project">
         <div class="project__img-box">
@@ -300,7 +351,7 @@
               src="./img/planetarium-small.webp"
               alt="Project 1 Image"
               class="project__img"
-              width="360"
+              width="400"
               height="400"
               sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
               loading="lazy"
@@ -339,68 +390,6 @@
             <a
               target="_blank"
               href="https://github.com/SupaFlava/planetarium"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
-      <!--Oryx-->
-      <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/oryx-big.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/oryx-medium.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/oryx-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="360"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <div class="project__details">
-          <h2 class="heading-secondary">Oryx</h2>
-          <h3 class="project__details_title details_title">Description</h3>
-
-          <p class="project__details__description">
-            For my final project at the GoMyCode bootcamp in 2021, I wanted to
-            create something that resonated with local culture and trends. So, I
-            developed an all-in-one e-commerce platform specifically for
-            Tunisian streetwear brands. This wasn't just a frontend ; I used all
-            technologies I'd learned throughout the course front to back.
-          </p>
-
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
-
-          <p class="project__details__description__technologies">
-            React - Redux - Bootstrap - Node - MongoDb
-          </p>
-
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://oryxapp.onrender.com/"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/OryxApp"
               class="btn btn--white"
             >
               see Code</a

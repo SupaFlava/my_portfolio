@@ -19,11 +19,15 @@
 
     @include respond(tablet) {
       flex-direction: row; // Side-by-side for tablets and above.
+	  &:nth-child(even) {
+		flex-direction: row-reverse;
+	  }
     }
 
     &:last-child {
       margin-bottom: 0;
     }
+	
 
     &__img-box {
       width: 65%; // Give some width on mobile.
