@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
+      content="Rami Mhazres's personal portfolio. Software Engineer with a passion for web development and DJing."
     />
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -42,7 +42,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing. change_me"
+      content="Rami Mhazres's personal portfolio. Software Engineer with a passion for web development and DJing. change_me"
     />
     <meta property="og:site_name" content="Rami Mhazres's Portfolio" />
     <meta
@@ -157,19 +157,19 @@
 	<!--Webserv -->
 	<div class="project">
 		<div class="project__img-box">
-		<picture>
+		<vide>
 			<source
 				media="(min-width:800px)"
-				srcset="./img/planetarium.webp"
+				srcset="./img/webserv800.webp"
 				type="image/webp"
 				/>
 				<source
 				media="(min-width:480px)"
-					srcset="./img/planetarium-medium.webp"
+					srcset="./img/webserv480.webp"
 					type="image/webp"
 				/>
 				<img
-					src="./img/planetarium-small.webp"
+					src="./img/webserv.png"
 					alt="Project 1 Image"
 					class="project__img"
 					width="400"
@@ -215,28 +215,19 @@
 			</div>
       <!--Cub3d -->
       <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/planetarium.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/planetarium-medium.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/planetarium-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="400"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
+	    <div class="project__media">
+        	<div class="project__img-box project__img-box--game">
+          		<iframe
+				class="project__img project__img--game"
+				src="https://supaflava.github.io/Cub3d-web/"
+				title="Cub3D playable demo"
+				loading="lazy"
+				allow="fullscreen; gamepad; pointer-lock"
+				></iframe>
+			</div>	
+			<p class="project__game-hint">
+				Click inside to play — WASD to move, mouse to look. Lost your cursor? Press <kbd>Esc</kbd> to get it back.
+			</p>
         </div>
 
         <div class="project__details">
@@ -245,7 +236,7 @@
           <h3 class="project__details_title details_title">Description</h3>
 
           <p class="project__details__description">
-			Cub3D is a group project part of the curriculum at Codam/42, inspired by Wolfenstein 3D. I contributed to the configuration parsing and map parsing, and implemented a custom memory management system.
+			Cub3D is a group project part of the curriculum at Codam/42, inspired by Wolfenstein 3D. I contributed to the configuration parsing and map parsing, and implemented a custom memory management system. I later ported the C codebase to WebAssembly so it runs directly in the browser — no download, no setup, just click and play.
 
           </p>
 
@@ -253,19 +244,19 @@
             technologies used
           </h3>
           <p class="project__details__description__technologies">
-            C - MLX42
+            C - MLX42 - Emscripten
           </p>
 
           <div class="project__links">
             <a
-              target="_blank"
-              href="https://planetarium-nine.vercel.app"
-              class="btn btn--blue"
-              >see Live</a
+			 target="_blank"
+			 class="btn btn--blue"
+			 href="https://supaflava.github.io/Cub3d-web/"
+              >Fullscreen</a
             >
             <a
               target="_blank"
-              href="https://github.com/SupaFlava/planetarium"
+              href="https://github.com/SupaFlava/Cub3d"
               class="btn btn--white"
             >
               see Code</a
@@ -273,66 +264,6 @@
           </div>
         </div>
       </div>
-	<!--Scratch Bank-->
-	<div class="project">
-	<div class="project__img-box">
-		<picture>
-		<source
-			media="(min-width:800px)"
-			srcset="./img/scratch-bank-last.webp"
-			type="image/webp"
-		/>
-		<source
-			media="(min-width:480px)"
-			srcset="./img/scratch-bank-mid.webp"
-			type="image/webp"
-		/>
-		<img
-			src="./img/scratch-bank-small.webp"
-			alt="Project 1 Image"
-			class="project__img"
-			width="400"
-			height="400"
-			sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-			loading="lazy"
-		/>
-		</picture>
-	</div>
-        <div class="project__details">
-          <h2 class="heading-secondary">Music & Sound bank for scratch dj's</h2>
-          <h3 class="project__details_title details_title">Description</h3>
-
-          <p class="project__details__description">
-            I created this project while leaning Vue fundamentals. it's a scrach
-            bank app for Djs to practice their session, share them, and connect
-            with other DJs. i plan to add a features to it soon.
-          </p>
-
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
-          <p class="project__details__description__technologies">
-            Vue.JS - Pinia - Firebase - Tailwind
-          </p>
-
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://scratch-bank.vercel.app"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/music"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
- 
       <!--Planatarium -->
       <div class="project">
         <div class="project__img-box">
@@ -438,11 +369,21 @@
         </div>
       </div>
     </footer>
-
+	
     <script
       src="https://kit.fontawesome.com/408cff8837.js"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
+	<div id="game-modal" class="game-modal" hidden>
+		<button class="game-modal__close" aria-label="Close">×</button>
+		<iframe
+		class="game-modal__frame"
+		src=""
+		allow="fullscreen; gamepad"
+		loading="lazy"
+		title="Cub3D playable demo"
+		></iframe>
+	</div>
+	<script src="app.js"></script>
   </body>
 </html>
