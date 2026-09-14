@@ -1,24 +1,24 @@
 @mixin center-flex {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 @mixin respond($breakpoint) {
-  @if $breakpoint ==tablet {
-    @media (min-width: 768px) {
-      @content;
-    }
-  }
+	@if $breakpoint ==tablet {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
 }
 
 @mixin heading-font() {
-  font-family: $heading-font;
-  font-weight: 700;
-  color: $color-primary-light;
-  text-transform: uppercase;
+	font-family: $heading-font;
+	font-weight: 700;
+	color: $color-primary-light;
+	text-transform: uppercase;
 }
 
 @mixin paragraph-style() {
-  color: $color-text-paragraph;
-  line-height: 1.8;
+	color: $color-text-paragraph;
+	line-height: 1.8;
 }

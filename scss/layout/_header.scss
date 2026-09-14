@@ -1,52 +1,52 @@
 .header {
-  @include center-flex;
-  flex-direction: column;
+	@include center-flex;
+	flex-direction: column;
 
-  min-height: 95vh;
-  gap: 5rem;
+	min-height: 95vh;
+	gap: 5rem;
 
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    #764ba2
-  );
-  background-size: cover;
-  background-position: top;
+	background-image: linear-gradient(
+		to right bottom,
+		$color-primary-light,
+		#764ba2
+	);
+	background-size: cover;
+	background-position: top;
 
-  @include respond(tablet) {
-    padding: 0rem;
-  }
+	@include respond(tablet) {
+		padding: 0rem;
+	}
 
-  &__logo-box {
-    margin-top: 2rem;
-    margin-bottom: auto;
-    padding: 0;
-    align-self: center;
-  }
-  &__logo {
-    height: 20rem;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    display: block;
-    padding: 0;
+	&__logo-box {
+		margin-top: 2rem;
+		margin-bottom: auto;
+		padding: 0;
+		align-self: center;
+	}
+	&__logo {
+		height: 20rem;
+		aspect-ratio: 1/1;
+		object-fit: contain;
+		display: block;
+		padding: 0;
 
-    transition: transform 2s ease-in-out;
-    @include respond(tablet) {
-      height: 25rem;
-    }
+		transition: transform 2s ease-in-out;
+		@include respond(tablet) {
+			height: 25rem;
+		}
 
-    &:hover {
-      animation: scratchRotate 1.5s forwards;
-    }
-  }
-  &__text-box {
-    text-align: center;
+		&:hover {
+			animation: scratchRotate 1.5s forwards;
+		}
+	}
+	&__text-box {
+		text-align: center;
 
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    gap: 10rem;
-  }
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+		gap: 10rem;
+	}
 }
