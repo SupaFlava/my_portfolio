@@ -30,5 +30,6 @@ If you'd like to run my portfolio locally:
    cd path-to-directory
    npm install
    npm run compile:sass
+   npx live-server
 
 5. **Feedback and Contributions**:I always welcome feedback and improvements. Please feel free to fork the repository and create pull requests or create an issue if you find any bugs or have feature requests.

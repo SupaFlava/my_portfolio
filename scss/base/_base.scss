@@ -1,35 +1,35 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 body {
-  box-sizing: border-box;
+	box-sizing: border-box;
 
-  @media (min-width: 350px) {
-    padding: 0rem;
-    font-size: 1.2rem;
-  }
-  @media (min-width: 450px) {
-    padding: 1rem;
-    font-size: 1.4rem;
-  }
-  @media (min-width: 766px) {
-    padding: 2rem;
+	@media (min-width: 350px) {
+		padding: 0rem;
+		font-size: 1.2rem;
+	}
+	@media (min-width: 450px) {
+		padding: 1rem;
+		font-size: 1.4rem;
+	}
+	@media (min-width: 766px) {
+		padding: 2rem;
 
-    font-size: 1.6rem;
-  }
-  @media (min-width: 1440px) {
-    font-size: 2rem;
-  }
-  scroll-behavior: smooth;
+		font-size: 1.6rem;
+	}
+	@media (min-width: 1440px) {
+		font-size: 2rem;
+	}
+	scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
-  display: none;
+	display: none;
 }

@@ -1,67 +1,81 @@
+@use "sass:color";
+
 .btn {
-  &:link,
-  &:visited {
-    font-family: $heading-font;
+	&:link,
+	&:visited {
+		font-family: $heading-font;
 
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    padding: 1.5rem 2rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-decoration: none;
+		display: inline-block;
+		border-radius: 10rem;
+		transition: all 0.2s;
+		padding: 1.5rem 2rem;
 
-    position: relative;
-  }
+		position: relative;
+	}
 
-  &:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    &::after {
-      transform: scale(1.1);
-      opacity: 0;
-    }
-  }
-  &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
+	&:hover {
+		transform: translateY(-0.3rem);
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+		&::after {
+			transform: scale(1.1);
+			opacity: 0;
+		}
+	}
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+	}
 
-  &--white {
-    background-color: $color-white;
+	&--white {
+		background-color: $color-white;
 
-    border: 2px solid #317a8e;
-    color: #317a8e;
-  }
-  &--blue {
-    background-color: darken($color-primary-light, 5%);
-    border: 2px solid darken($color-primary-light, 5%);
-    padding: 1rem 2.4rem;
-    color: $color-white;
-    &:hover {
-      background-color: darken($color-primary-light, 15%);
-    }
-  }
+		border: 2px solid #317a8e;
+		color: #317a8e;
+	}
+	&--blue {
+		background-color: color.adjust(
+			$color-primary-light,
+			$lightness: -5%,
+			$space: hsl
+		);
+		border: 2px solid
+			color.adjust($color-primary-light, $lightness: -5%, $space: hsl);
+		padding: 1rem 2.4rem;
+		color: $color-white;
+		&:hover {
+			background-color: color.adjust(
+				$color-primary-light,
+				$lightness: -15%,
+				$space: hsl
+			);
+		}
+		@include respond(tablet) {
+			padding: 1rem 2.4rem; // keep blue's own padding at tablet+
+		}
+	}
 
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
+	&::after {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 10rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+	}
 
-  &--animated {
-    animation: moveInBottom 0.5s ease-out 0.75s;
-    animation-fill-mode: backwards;
-    border: none;
-  }
-  @include respond(tablet) {
-    padding: 1rem 3rem;
-  }
+	&--animated {
+		animation: moveInBottom 0.5s ease-out 0.75s;
+		animation-fill-mode: backwards;
+		border: none;
+	}
+	@include respond(tablet) {
+		padding: 1rem 3rem;
+	}
 }

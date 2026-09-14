@@ -1,459 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-EDJ16LP38J"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-EDJ16LP38J"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-      gtag("config", "G-EDJ16LP38J");
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
-    />
+			gtag("config", "G-EDJ16LP38J");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
+		/>
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-      as="style"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="preload"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+			as="style"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+			onload="
+				this.onload = null;
+				this.rel = 'stylesheet';
+			"
+		/>
 
-    <title>Rami Mhazres - Frontend Developer</title>
-    <!--Open Graph-->
-    <meta proporty="og:title" content="Rami Mhazres - Frontend Developer" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:description"
-      content="Rami Mhazres's personal portfolio. Frontend Developer with a passion for web development and DJing."
-    />
-    <meta property="og:site_name" content="Rami Mhazres's Portfolio" />
-    <meta
-      property="og:image"
-      content="https://supaflava.github.io/my_portfolio/img/me1.webp"
-    />
-    <meta property="og:image:alt" content="A portrait of Rami Mhazres." />
-  </head>
-  <body>
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-      <label for="navi-toggle" class="navigation__button"
-        ><span class="navigation__icon">&nbsp;</span></label
-      >
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#about-me" class="navigation__link">About Me</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#projects" class="navigation__link">projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#contacts" class="navigation__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <header class="header">
-      <div class="header__logo-box">
-        <img
-          class="header__logo"
-          src="./img/supaflava logo.svg"
-          alt="supaflava logo"
-        />
-      </div>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">Rami Mhazres</span>
-          <span class="heading-primary--sub">Front end Developer</span>
-        </h1>
-        <a href="#about-me" class="btn btn--white btn--animated"
-          >get to know me</a
-        >
-      </div>
-    </header>
+		<title>Rami Mhazres - Software Engineer</title>
+		<!--Open Graph-->
+		<meta property="og:title" content="Rami Mhazres - Software Engineer" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:description"
+			content="Rami Mhazres's personal portfolio. Software Engineer with a passion for web development and DJing."
+		/>
+		<meta property="og:site_name" content="Rami Mhazres's Portfolio" />
+		<meta
+			property="og:image"
+			content="https://supaflava.github.io/my_portfolio/img/me1.webp"
+		/>
+		<meta property="og:image:alt" content="A portrait of Rami Mhazres." />
+	</head>
+	<body>
+		<div class="navigation">
+			<input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+			<label for="navi-toggle" class="navigation__button"
+				><span class="navigation__icon">&nbsp;</span></label
+			>
+			<div class="navigation__background">&nbsp;</div>
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#about-me" class="navigation__link">About Me</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#projects" class="navigation__link">Projects</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#contacts" class="navigation__link">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
-    <section class="about-me" id="about-me">
-      <div class="about-me__img-box">
-        <picture>
-          <source
-            media="(min-width:800px)"
-            srcset="./img/me1.webp"
-            type="image/webp"
-          />
-          <source
-            media="(min-width:480px)"
-            srcset="./img/me-medium.webp"
-            type="image/webp"
-          />
-          <img
-            src="./img/me-small.webp"
-            alt="A portrait of Rami Mhazres."
-            sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-            class="about-me__img"
-          />
-        </picture>
-      </div>
-      <div class="about-me__text">
-        <div class="about-me__story">
-          <h2 class="heading-secondary">My Story</h2>
-          <p class="about-me__description">
-            I've been a DJ for over 10 years. When the pandemic hit and
-            nightlife shut down, I all of a sudden had a lot of free time. I've
-            always been into computers, and that's when I stumbled upon coding.
-            It felt like solving puzzles, which I love.<br />
-            <br />
-            I started by teaching myself and after two months I joined a
-            six-month bootcamp where I learned about the MERN stack. When the
-            bootcamp ended, and things started to open up again, I went back to
-            DJing. I wasn't ready to switch careers just yet. Partly because I
-            felt like I still had a lot to learn in the field of development,
-            but also because I enjoyed following tutorials and learning at my
-            own pace.<br />
-            <br />
+		<header class="header">
+			<div class="header__logo-box">
+				<img
+					class="header__logo"
+					src="./img/supaflava logo.svg"
+					alt="supaflava logo"
+				/>
+			</div>
+			<div class="header__text-box">
+				<h1 class="heading-primary">
+					<span class="heading-primary--main">Rami Mhazres</span>
+					<span class="heading-primary--sub">Software Engineer</span>
+				</h1>
+				<a href="#about-me" class="btn btn--white btn--animated">About me</a>
+			</div>
+		</header>
 
-            Later on, I got a chance to join another bootcamp, this time
-            sponsored by GIZ. It was different; it was more about the basics of
-            computer science. But even after finishing that, I wasn't in a rush
-            to get a job as a web developer. I liked coding as a hobby.<br />
-            <br />
+		<section class="about-me" id="about-me">
+			<div class="about-me__inner">
+				<div class="about-me__img-box">
+					<picture>
+						<source
+							media="(min-width:800px)"
+							srcset="./img/rmhazres800.webp"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:480px)"
+							srcset="./img/rmhazres480.webp"
+							type="image/webp"
+						/>
+						<img
+							src="./img/rmhazres320.webp"
+							alt="A portrait of Rami Mhazres."
+							sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+							class="about-me__img"
+						/>
+					</picture>
+				</div>
 
-            But now, in 2023, things have changed. I moved to the Netherlands,
-            and I feel it's time to switch things up. I want to work as a web
-            developer and keep my DJing as a side passion. I genuinely believe
-            that coding is what I want to do.
-          </p>
-        </div>
-        <div class="about-me__goals">
-          <h2 class="heading-secondary">What i'm looking for</h2>
-          <p class="about-me__description">
-            I would like to be somewhere where I can grow big time. A place with
-            good vibes and a team that does things the right way. It'd be cool
-            to have some seasoned pros around, so I can pick up new tricks and
-            keep leveling up. And although I'm flexible, I prefer working
-            face-to-face. I love being on-site and in the mix with everyone.
-          </p>
-        </div>
-      </div>
-    </section>
+				<div class="about-me__text">
+					<div class="about-me__story">
+						<h2 class="heading-secondary">Background</h2>
+						<p class="about-me__description">
+							Software developer with working knowledge in C/C++ and good
+							fundamentals in JavaScript and object-oriented programming. I
+							enjoy understanding how technologies work under the hood —
+							debugging and solving technical problems across systems, web, and
+							applications. I learn independently and work well in teams, and I
+							like sharing knowledge and contributing in a supportive
+							environment.
+						</p>
+						<p class="about-me__description">
+							I'm currently at Codam Coding College (42 Network), where I've
+							built group projects like Webserv and Cub3D in C/C++. I'm
+							especially drawn to roles where I can work across the stack — from
+							low-level performance and debugging to building and designing full
+							applications. Outside of code, I spent over a decade as a DJ, and
+							music's still a big part of my life today. I'm also currently
+							teaching myself drums.
+						</p>
+					</div>
 
-    <section class="projects" id="projects">
-      <!--Scratch Bank-->
-      <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/scratch-bank-last.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/scratch-bank-mid.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/scratch-bank-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="360"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <!--Scratch bank-->
-        <div class="project__details">
-          <h2 class="heading-secondary">Music & Sound bank for scratch dj's</h2>
-          <h3 class="project__details_title details_title">Description</h3>
+					<div class="about-me__goals">
+						<h2 class="heading-secondary">What I'm looking for</h2>
+						<p class="about-me__description">
+							I'm looking for an internship or junior software engineering role,
+							ideally somewhere with a positive, healthy engineering culture and
+							room to grow. I want to work alongside people I can learn from, on
+							projects that are genuinely interesting and cool.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <p class="project__details__description">
-            I created this project while leaning Vue fundamentals. it's a scrach
-            bank app for Djs to practice their session, share them, and connect
-            with other DJs. i plan to add a features to it soon.
-          </p>
+		<section class="projects" id="projects">
+			<!-- Webserv -->
+			<div class="project">
+				<div class="project__img-box">
+					<picture>
+						<source
+							media="(min-width:800px)"
+							srcset="./img/webservfull.webp"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:480px)"
+							srcset="./img/webservfull.webp"
+							type="image/webp"
+						/>
+						<img
+							src="./img/webservfull.webp"
+							alt="Webserv HTTP server running in a terminal"
+							class="project__img"
+							width="400"
+							height="400"
+							sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+							loading="lazy"
+						/>
+					</picture>
+				</div>
 
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
-          <p class="project__details__description__technologies">
-            Vue.JS - Pinia - Firebase - Tailwind
-          </p>
+				<div class="project__details">
+					<h2 class="heading-secondary">Webserv</h2>
 
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://scratch-bank.vercel.app"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/music"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- Mood  -->
-      <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/mood-big.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/mood-medium.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/mood-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="360"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
-        </div>
+					<h3 class="project__details_title details_title">Description</h3>
+					<p class="project__details__description">
+						Webserv is a group project focused on building a basic HTTP server
+						from scratch using C++. I built the request/response parser and
+						validator, handled file uploads, and implemented CGI execution.
+					</p>
 
-        <div class="project__details">
-          <h2 class="heading-secondary">AI-Driven Journaling Platform</h2>
-          <h3 class="project__details_title details_title">Description</h3>
+					<h3 class="project__details_title details_title">
+						technologies used
+					</h3>
+					<p class="project__details__description__technologies">Vanilla C++</p>
 
-          <p class="project__details__description">
-            I dove into this project during the "AI-Powered Fullstack Next.js
-            App" course from Frontend Mentor. Imagine jotting down your daily
-            thoughts, and then, boom, AI jumps in, slaps on a fitting title,
-            colors it based on your mood, and even tells you if it's a happy
-            note or not. Curious if you've been on cloud nine or a bit down
-            lately? Just ask it, "Hey, was I feeling good the past 10 days?" and
-            it'll comb through your entries, giving you a quick mood recap.
-            Plus, you get to see mood swing charts.
-          </p>
+					<div class="project__links">
+						<a
+							target="_blank"
+							href="https://github.com/SupaFlava/webserv"
+							class="btn btn--white"
+						>
+							see Code</a
+						>
+					</div>
+				</div>
+			</div>
 
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
-          <p class="project__details__description__technologies">
-            Next.js - Prisma - PlanetScale - OpenAI API - Langchain - Tailwind
-          </p>
+			<!-- Cub3d -->
+			<div class="project">
+				<div class="project__media">
+					<div class="project__img-box project__img-box--game">
+						<iframe
+							class="project__img project__img--game"
+							src="https://supaflava.github.io/Cub3d-web/"
+							title="Cub3D playable demo"
+							loading="lazy"
+							allow="fullscreen; gamepad"
+						></iframe>
+					</div>
+					<p class="project__game-hint">
+						Click inside to play — WASD to move, mouse to look. Lost your
+						cursor? Press <kbd>Esc</kbd> to get it back.
+					</p>
+				</div>
 
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://nextjs-ai-feels.vercel.app"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/nextjs-ai"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
+				<div class="project__details">
+					<h2 class="heading-secondary">Cub3d</h2>
 
-      <!--Planatarium -->
-      <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/planetarium.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/planetarium-medium.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/planetarium-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="360"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
-        </div>
+					<h3 class="project__details_title details_title">Description</h3>
+					<p class="project__details__description">
+						Cub3D is a group project part of the curriculum at Codam/42,
+						inspired by Wolfenstein 3D. I contributed to the configuration
+						parsing and map parsing, and implemented a custom memory management
+						system. I later ported the C codebase to WebAssembly so it runs
+						directly in the browser — no download, no setup, just click and
+						play.
+					</p>
 
-        <div class="project__details">
-          <h2 class="heading-secondary">planetarium</h2>
+					<h3 class="project__details_title details_title">
+						technologies used
+					</h3>
+					<p class="project__details__description__technologies">
+						C - MLX42 - Emscripten
+					</p>
 
-          <h3 class="project__details_title details_title">Description</h3>
+					<div class="project__links">
+						<a
+							target="_blank"
+							class="btn btn--blue"
+							href="https://supaflava.github.io/Cub3d-web/"
+							>Fullscreen</a
+						>
+						<a
+							target="_blank"
+							href="https://github.com/SupaFlava/Cub3d"
+							class="btn btn--white"
+						>
+							see Code</a
+						>
+					</div>
+				</div>
+			</div>
 
-          <p class="project__details__description">
-            After taking a break from coding, I decided to dive back in with the
-            "Planetarium Explorer" project. It's a straightforward web app that
-            lets you explore the solar system. I used a template from Frontend
-            Masters as my base. This project was especially refreshing because I
-            got to brush up on my frontend skills and learn about styled
-            components and TypeScript along the way.
-          </p>
+			<!-- Planetarium -->
+			<div class="project">
+				<div class="project__img-box">
+					<picture>
+						<source
+							media="(min-width:800px)"
+							srcset="./img/planetarium.webp"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:480px)"
+							srcset="./img/planetarium-medium.webp"
+							type="image/webp"
+						/>
+						<img
+							src="./img/planetarium-small.webp"
+							alt="Planetarium Explorer web app"
+							class="project__img"
+							width="400"
+							height="400"
+							sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+							loading="lazy"
+						/>
+					</picture>
+				</div>
 
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
-          <p class="project__details__description__technologies">
-            Next.js - Styled Components - TypeScript - Contentful CMS
-          </p>
+				<div class="project__details">
+					<h2 class="heading-secondary">planetarium</h2>
 
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://planetarium-nine.vercel.app"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/planetarium"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
-      <!--Oryx-->
-      <div class="project">
-        <div class="project__img-box">
-          <picture>
-            <source
-              media="(min-width:800px)"
-              srcset="./img/oryx-big.webp"
-              type="image/webp"
-            />
-            <source
-              media="(min-width:480px)"
-              srcset="./img/oryx-medium.webp"
-              type="image/webp"
-            />
-            <img
-              src="./img/oryx-small.webp"
-              alt="Project 1 Image"
-              class="project__img"
-              width="360"
-              height="400"
-              sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-        <div class="project__details">
-          <h2 class="heading-secondary">Oryx</h2>
-          <h3 class="project__details_title details_title">Description</h3>
+					<h3 class="project__details_title details_title">Description</h3>
+					<p class="project__details__description">
+						After taking a break from coding, I decided to dive back in with the
+						"Planetarium Explorer" project. It's a straightforward web app that
+						lets you explore the solar system. I used a template from Frontend
+						Masters as my base. This project was especially refreshing because I
+						got to brush up on my frontend skills and learn about styled
+						components and TypeScript along the way.
+					</p>
 
-          <p class="project__details__description">
-            For my final project at the GoMyCode bootcamp in 2021, I wanted to
-            create something that resonated with local culture and trends. So, I
-            developed an all-in-one e-commerce platform specifically for
-            Tunisian streetwear brands. This wasn't just a frontend ; I used all
-            technologies I'd learned throughout the course front to back.
-          </p>
+					<h3 class="project__details_title details_title">
+						technologies used
+					</h3>
+					<p class="project__details__description__technologies">
+						Next.js - Styled Components - TypeScript - Contentful CMS
+					</p>
 
-          <h3 class="project__details_title details_title">
-            technologies used
-          </h3>
+					<div class="project__links">
+						<a
+							target="_blank"
+							href="https://planetarium-nine.vercel.app"
+							class="btn btn--blue"
+							>see Live</a
+						>
+						<a
+							target="_blank"
+							href="https://github.com/SupaFlava/planetarium"
+							class="btn btn--white"
+						>
+							see Code</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <p class="project__details__description__technologies">
-            React - Redux - Bootstrap - Node - MongoDb
-          </p>
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<div class="footer__info">
+					<h3 class="heading-tertiary">Let's Connect</h3>
+					<p class="footer__contact">
+						Feel free to reach out if you're looking for a developer, have a
+						question, or just want to connect.
+					</p>
+					<a href="mailto:mhazresrami@gmail.com" class="btn btn--white"
+						>Email Me</a
+					>
+				</div>
 
-          <div class="project__links">
-            <a
-              target="_blank"
-              href="https://oryxapp.onrender.com/"
-              class="btn btn--blue"
-              >see Live</a
-            >
-            <a
-              target="_blank"
-              href="https://github.com/SupaFlava/OryxApp"
-              class="btn btn--white"
-            >
-              see Code</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer" id="contacts">
-      <div class="container">
-        <div class="footer__info">
-          <h3 class="heading-tertiary">Let's Connect</h3>
-          <p class="footer__contact">
-            Feel free to reach out if you're looking for a developer, have a
-            question, or just want to connect.
-          </p>
-          <a href="mailto:mhazresrami@gmail.com" class="btn btn--white"
-            >Email Me</a
-          >
-        </div>
+				<div class="footer__social">
+					<a
+						target="_blank"
+						href="https://github.com/SupaFlava"
+						class="footer__social-icon"
+						><i class="fab fa-github"></i>Github</a
+					>
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/in/rami-mhazres/"
+						class="footer__social-icon"
+						><i class="fab fa-linkedin"></i>LinkedIn</a
+					>
+				</div>
 
-        <div class="footer__social">
-          <a
-            target="_blank"
-            href="https://github.com/SupaFlava"
-            class="footer__social-icon"
-            ><i class="fab fa-github"></i>Github</a
-          >
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/rami-mhazres/"
-            class="footer__social-icon"
-            ><i class="fab fa-linkedin"></i>LinkedIn</a
-          >
+				<div class="footer__legal">
+					<p>&copy; 2023–2026 Rami Mhazres.</p>
+				</div>
+			</div>
+		</footer>
 
-          <a
-            target="_blank"
-            href="https://learn.gomycode.co/credentials/9ed1e177-e491-4f47-ab42-e474b30d7f47/GYAOARMHSYYSCALOCEDEEEONI-CN-TC-O/00001058"
-            class="footer__social-icon"
-            ><i class="fa-solid fa-certificate"></i>Credentials</a
-          >
-        </div>
+		<script
+			src="https://kit.fontawesome.com/408cff8837.js"
+			crossorigin="anonymous"
+		></script>
 
-        <div class="footer__legal">
-          <p>&copy;Made in 2023 by Rami Mhazres.</p>
-        </div>
-      </div>
-    </footer>
+		<div id="game-modal" class="game-modal" hidden>
+			<button class="game-modal__close" aria-label="Close">×</button>
+			<iframe
+				class="game-modal__frame"
+				src=""
+				allow="fullscreen; gamepad"
+				loading="lazy"
+				title="Cub3D playable demo"
+			></iframe>
+		</div>
 
-    <script
-      src="https://kit.fontawesome.com/408cff8837.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+		<script src="app.js"></script>
+	</body>
 </html>

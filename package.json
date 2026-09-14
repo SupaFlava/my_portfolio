@@ -4,11 +4,12 @@
   "description": "my_portfolio",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass scss/main.scss css/styles.css -w"
+    "compile:sass": "sass scss/main.scss css/styles.css -w"
   },
   "author": "rami mhazres",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "prettier": "^3.9.6"
   }
 }

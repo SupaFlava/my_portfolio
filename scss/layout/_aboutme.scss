@@ -1,77 +1,77 @@
 .about-me {
-  @include center-flex;
-  flex-direction: column; // Stack items on mobile.
-  padding: 4rem 2rem; // Reduced side padding for mobile.
-  background-color: #f9f9f9;
+	@include center-flex;
+	flex-direction: column; // Stack items on mobile.
+	padding: 4rem 2rem; // Reduced side padding for mobile.
+	background-color: #f9f9f9;
 
-  @include respond(tablet) {
-    flex-direction: row; // Original direction on tablet and above.
-    align-items: center;
-  }
-  &__story,
-  &__goals {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  &__img-box {
-    width: 65%;
-    margin-top: 2rem;
+	@include respond(tablet) {
+		flex-direction: row; // Original direction on tablet and above.
+		align-items: center;
+	}
+	&__story,
+	&__goals {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	&__img-box {
+		width: 65%;
+		margin-top: 2rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem; // Spacing between image and text on mobile.
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem; // Spacing between image and text on mobile.
 
-    @include respond(tablet) {
-      width: 100%;
-      flex: 1;
-      margin-bottom: 0;
-    }
-  }
+		@include respond(tablet) {
+			width: 100%;
+			flex: 1;
+			margin-bottom: 0;
+		}
+	}
 
-  &__img {
-    width: 100%; // Full width on mobile.
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+	&__img {
+		width: 100%; // Full width on mobile.
+		border-radius: 50%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
 
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in;
-  }
+		box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+		animation: fadeIn 2s ease-in;
+	}
 
-  &__text {
-    display: flex;
-    flex-direction: column;
+	&__text {
+		display: flex;
+		flex-direction: column;
 
-    text-align: center; // Centered text on mobile.
-    padding: 0 2rem; // Some side padding on mobile for better readability.
+		text-align: center; // Centered text on mobile.
+		padding: 0 2rem; // Some side padding on mobile for better readability.
 
-    @include respond(tablet) {
-      justify-content: space-between;
+		@include respond(tablet) {
+			justify-content: space-between;
 
-      flex: 2;
-      text-align: left; // Left-align on tablet and above.
-      padding-left: 4rem;
-    }
-  }
-  &__description {
-    @include paragraph-style;
-    margin-bottom: 2rem;
-    &-link {
-      padding: 0;
-      margin: 0;
-      font-weight: 700;
-    }
-  }
-  &__below-container {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  &__below-logo {
-    width: 50px;
-    align-self: center;
-  }
+			flex: 2;
+			text-align: left; // Left-align on tablet and above.
+			padding-left: 4rem;
+		}
+	}
+	&__description {
+		@include paragraph-style;
+		margin-bottom: 2rem;
+		&-link {
+			padding: 0;
+			margin: 0;
+			font-weight: 700;
+		}
+	}
+	&__below-container {
+		margin-top: 2rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__below-logo {
+		width: 50px;
+		align-self: center;
+	}
 }
