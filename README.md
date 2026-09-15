@@ -2,8 +2,6 @@
 
 Welcome to the repository for my personal portfolio. Here, I've showcased my journey, skills, and some of the projects I've worked on as a Developer.
 
-![Portfolio Screenshot](./img/screenshot1.png)
-
 ## Overview
 
 - **Projects**: A showcase of my work, detailing the technologies used.
