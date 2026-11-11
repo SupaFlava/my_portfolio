@@ -9,7 +9,7 @@
   "author": "rami mhazres",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^9.0.0",
-    "prettier": "^3.9.6"
+    "prettier": "^3.9.6",
+    "sass": "^1.80.7"
   }
 }

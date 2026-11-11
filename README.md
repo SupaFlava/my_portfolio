@@ -1,30 +1,32 @@
-# Rami Mhazres - Software Engineer Portfolio
+# Rami Mhazres – Portfolio
 
-Welcome to the repository for my personal portfolio. Here, I've showcased my journey, skills, and some of the projects I've worked on as a Developer.
+My personal portfolio site: who I am, what I've built and how to reach me.
 
-## Overview
+**Live:** https://supaflava.github.io/my_portfolio/
 
-- **Projects**: A showcase of my work, detailing the technologies used.
-- **Contact**: Reach out to me directly from the site or through my social media handles.
+## Projects on the site
 
-## Technologies Used
+- **De Verbranders**: website for a podcast collective (Next.js, TypeScript, Tailwind, Sanity CMS)
+- **Webserv**: HTTP server written from scratch in C++
+- **Cub3D**: raycasting game in C, ported to WebAssembly so it plays in the browser
+- **Planetarium**: solar system explorer (Next.js, TypeScript, Contentful)
 
-- **Frontend**: <HTML , SASS>
-- **Hosting**: <GITHUB Pages>
+## Built with
 
-## Features
+HTML, CSS (originally written in Sass) and a little vanilla JavaScript. Hosted on GitHub Pages.
 
-1. **Responsive Design**: The portfolio is optimized for mobile and desktop viewing.
-2. **Dynamic Projects Section**: Displays my recent projects with options to view the live site and the source code.
+## Running locally
 
-## Running Locally
+```bash
+git clone https://github.com/SupaFlava/my_portfolio.git
+cd my_portfolio
+npx live-server
+```
 
-If you'd like to run my portfolio locally:
+> **Note:** `css/styles.css` is the stylesheet the site uses, and it's edited directly.
+> The files in `scss/` are older and out of sync, so don't run `npm run compile:sass`.
+> It would overwrite the current styles.
 
-4. **Clone this repository**:
-   cd path-to-directory
-   npm install
-   npm run compile:sass
-   npx live-server
+## Feedback
 
-5. **Feedback and Contributions**:I always welcome feedback and improvements. Please feel free to fork the repository and create pull requests or create an issue if you find any bugs or have feature requests.
+Found a bug or have an idea? Open an issue or a pull request.
