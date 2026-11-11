@@ -19,8 +19,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Rami Mhazres's personal portfolio. Software Developer with a passion for web and Music."
+			content="Rami Mhazres's personal portfolio. Software Engineer with a passion for web development and music."
 		/>
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="img/favicon-512.png" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,14 +48,19 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:description"
-			content="Rami Mhazres's personal portfolio. Software Engineer with a passion for web development and DJing."
+			content="Rami Mhazres's personal portfolio. Software Engineer with a passion for web development and music."
 		/>
 		<meta property="og:site_name" content="Rami Mhazres's Portfolio" />
+		<meta property="og:url" content="https://supaflava.github.io/my_portfolio/" />
 		<meta
 			property="og:image"
-			content="https://supaflava.github.io/my_portfolio/img/me1.webp"
+			content="https://supaflava.github.io/my_portfolio/img/og-image.jpg"
 		/>
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
 		<meta property="og:image:alt" content="A portrait of Rami Mhazres." />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="canonical" href="https://supaflava.github.io/my_portfolio/" />
 	</head>
 	<body>
 		<div class="navigation">
@@ -130,7 +138,9 @@
 						</p>
 						<p class="about-me__description">
 							I'm currently at Codam Coding College (42 Network), where I've
-							built group projects like Webserv and Cub3D in C/C++. I'm
+							built group projects like Webserv and Cub3D in C/C++. Next to
+							school I built the website for De Verbranders, a podcast
+							collective, and I still run and maintain it. I'm
 							especially drawn to roles where I can work across the stack — from
 							low-level performance and debugging to building and designing full
 							applications. Outside of code, I spent over a decade as a DJ, and
@@ -148,11 +158,87 @@
 							projects that are genuinely interesting and cool.
 						</p>
 					</div>
+
+					<div class="about-me__skills">
+						<h2 class="heading-secondary">Tech I work with</h2>
+						<ul class="skills">
+							<li class="skills__item">C</li>
+							<li class="skills__item">C++</li>
+							<li class="skills__item">JavaScript</li>
+							<li class="skills__item">TypeScript</li>
+							<li class="skills__item">React</li>
+							<li class="skills__item">Next.js</li>
+							<li class="skills__item">Sass</li>
+							<li class="skills__item">Tailwind CSS</li>
+							<li class="skills__item">Sanity CMS</li>
+							<li class="skills__item">MongoDB</li>
+							<li class="skills__item">Git</li>
+							<li class="skills__item">Docker</li>
+							<li class="skills__item">Linux</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="projects" id="projects">
+			<!-- De Verbranders -->
+			<div class="project">
+				<div class="project__img-box">
+					<picture>
+						<source
+							media="(min-width:800px)"
+							srcset="./img/verbranders.webp"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width:480px)"
+							srcset="./img/verbranders-medium.webp"
+							type="image/webp"
+						/>
+						<img
+							src="./img/verbranders-small.webp"
+							alt="De Verbranders podcast website homepage"
+							class="project__img"
+							width="400"
+							height="400"
+							sizes="(min-width: 800px) 800px, (min-width: 480px) 480px, 100vw"
+							loading="lazy"
+						/>
+					</picture>
+				</div>
+
+				<div class="project__details">
+					<h2 class="heading-secondary">De Verbranders</h2>
+
+					<h3 class="project__details_title details_title">Description</h3>
+					<p class="project__details__description">
+						De Verbranders is a podcast production collective making series on
+						Europe's borders, Islamophobia and care. I designed and built
+						their website from scratch: podcast and episode pages fed from RSS,
+						contributor profiles, reflections and a playground. Everything is
+						editable by the team through an embedded Sanity Studio, and I
+						self-host the site on a VPS with Nginx.
+					</p>
+
+					<h3 class="project__details_title details_title">
+						technologies used
+					</h3>
+					<p class="project__details__description__technologies">
+						Next.js - React - TypeScript - Tailwind CSS - Sanity CMS
+					</p>
+
+					<div class="project__links">
+						<a
+							target="_blank" rel="noopener noreferrer"
+							href="https://deverbranders.org"
+							class="btn btn--blue"
+							>see Live</a
+						>
+					</div>
+				</div>
+			</div>
+
 			<!-- Webserv -->
 			<div class="project">
 				<div class="project__img-box">
@@ -196,7 +282,7 @@
 
 					<div class="project__links">
 						<a
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 							href="https://github.com/SupaFlava/webserv"
 							class="btn btn--white"
 						>
@@ -246,13 +332,13 @@
 
 					<div class="project__links">
 						<a
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 							class="btn btn--blue"
 							href="https://supaflava.github.io/Cub3d-web/"
 							>Fullscreen</a
 						>
 						<a
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 							href="https://github.com/SupaFlava/Cub3d"
 							class="btn btn--white"
 						>
@@ -310,13 +396,13 @@
 
 					<div class="project__links">
 						<a
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 							href="https://planetarium-nine.vercel.app"
 							class="btn btn--blue"
 							>see Live</a
 						>
 						<a
-							target="_blank"
+							target="_blank" rel="noopener noreferrer"
 							href="https://github.com/SupaFlava/planetarium"
 							class="btn btn--white"
 						>
@@ -342,13 +428,13 @@
 
 				<div class="footer__social">
 					<a
-						target="_blank"
+						target="_blank" rel="noopener noreferrer"
 						href="https://github.com/SupaFlava"
 						class="footer__social-icon"
 						><i class="fab fa-github"></i>Github</a
 					>
 					<a
-						target="_blank"
+						target="_blank" rel="noopener noreferrer"
 						href="https://www.linkedin.com/in/rami-mhazres/"
 						class="footer__social-icon"
 						><i class="fab fa-linkedin"></i>LinkedIn</a
@@ -365,17 +451,6 @@
 			src="https://kit.fontawesome.com/408cff8837.js"
 			crossorigin="anonymous"
 		></script>
-
-		<div id="game-modal" class="game-modal" hidden>
-			<button class="game-modal__close" aria-label="Close">×</button>
-			<iframe
-				class="game-modal__frame"
-				src=""
-				allow="fullscreen; gamepad"
-				loading="lazy"
-				title="Cub3D playable demo"
-			></iframe>
-		</div>
 
 		<script src="app.js"></script>
 	</body>
